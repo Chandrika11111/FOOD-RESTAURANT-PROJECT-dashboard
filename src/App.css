@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.navSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #364156;
+    color: white;
+    height: 20px;
+}
+.navSection .company{
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navSection .userAuth {
+   display: flex;
+   align-items: center; 
+}
+ span{
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+span:hover{
+    background-color: #375257;
+}
+.sideBarSection{
+    width: 200px;
+    height: 650px;
+    background-color: #212D40;
+    color: white;
+    padding-top: 20px;
+    
+}
+.sideBarSection ul{
+    list-style-type: none;
+    padding: 0;
+}
+.sideBarSection ul li{
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.sideBarSection ul li:hover{
+    background-color: #375257;
+}
+.collectionSection{
+    display: flex;
+}
+.loginSection{
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    -webkit-box-shadow: 12px 18px 40px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 18px 40px 0px rgba(0,0,0,0.75);
+box-shadow: 12px 18px 40px 0px rgba(0,0,0,0.75)
+}
+.loginSection h3{
+    margin-bottom: 20px;
+    color: #333;
+}
+.formAuth{
+    text-align: left;
+}
+.formAuth label{
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+.formAuth input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+.formAuth input:focus{
+    border-color: #375257;
+    outline: none;
+}
+.btnSubmit{
+    text-align: center;
+}
+.btnSubmit button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #373857;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btnSubmit button:hover{
+    background-color: #374D57;
+}
+.registerSection{
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    -webkit-box-shadow: 12px 18px 40px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 18px 40px 0px rgba(0,0,0,0.75);
+box-shadow: 12px 18px 40px 0px rgba(0,0,0,0.75)
+}
+.firmSection{
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    -webkit-box-shadow: 12px 18px 40px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 18px 40px 0px rgba(0,0,0,0.75);
+box-shadow: 12px 18px 40px 0px rgba(0,0,0,0.75)
+}
+.firmSection h3{
+    color: #373857;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.firmSection label{
+    margin-bottom: 5px;
+    color: #374D57;
+}
+
+.firmSection input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+.firmSection input:focus{
+    border-color: #373857;
+    outline: none;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.inputContaner{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+.checkboxContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkboxContainer label{
+    font-size: 14px;
+    color: #374D57;
+}
+.checkboxContainer input[type='checkbox']{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #373857;
+}
+.checkboxContainer input[type='checkbox']:hover {
+    border-color: #375657;
+}
+.checkboxContainer input[type='checkbox']:focus {
+    outline: 2px solid #374D57;
+}
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 150px;
+    font-size: 18px;
+    text-align: left;
+}
+.product-table thead{
+    background-color:#009879;
+    color: #ffffff;
+}
+.product-table th, .product-table td{
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+.product-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.product-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.product-table tbody tr:hover{
+    background-color: #f1f1f1;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+.product-table td img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.product-table button{
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ .product-table button:hover{
+    background-color: #c0392b;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+ }
+ .errorSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100hv;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: Arial,sana-serif;
+    padding: 20px;
+ }
+ .errorSection h1{
+    font-size: 6rem;
+    margin: 0;
+    color: #e74c3c;
+ }
+ .errorSection div{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #374D57;
+ }
+  p{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+   background-color: black;
+    border-radius: 5px;
+    transition: background-color 0.3, color 0.3s;
+    
+ }
+ p:hover{
+    background-color: #3498db;
+    color: white;
+ }
+ @keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+ }
+ .errorSection{
+    animation: fadeIn 1s ease-in-out;
+ }
+ .welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: linear-gradient(135deg,#e0eafc,#cfdef3);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+ }
+ .welcomeContent {
+    padding: 20px;
+    max-width: 600px;
+    margin-left: 150px;
+  }
+ .welcomeContent h1{
+    font-size: 2.5rem;
+    margin: 0;
+    color:#333 ;
+ }
+ .welcomeContent h4{
+     font-size: 1.2rem;
+     color: #666;
+ }
+ .welcomeImg {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 150px;
+ }
+ .welcomeImg img{
+   width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+ }
+ .firmWelcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50hv;
+    padding: 20px;
+    border-radius: border-box;
+    text-align: center;
+    margin-left: 200px;
+   
+ }
+ .firmWelcome h1{
+    font-size: 2.5rem;
+    margin: 0;
+    color: #333;
+    margin-top: 0;
+ }
+ .firmWelcome h3{
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 20px;
+ }
+ .firmWelcomeImg{
+    text-align: center;
+ }
+ .firmWelcomeImg img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+ }
+.Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+.HomePageContent{
+    text-align: center;
+    margin-left: 100px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.HomePageContent h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.HomePageContent h3 {
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+.logoSection {
+    text-align: center;
+    padding: 30px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logoSection .styled-text {
+    color: #2a2a2a;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Playwrite AU SA", cursive;
+  font-style: italic;
+}
+.img img {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%; 
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    object-fit: cover; 
+}
